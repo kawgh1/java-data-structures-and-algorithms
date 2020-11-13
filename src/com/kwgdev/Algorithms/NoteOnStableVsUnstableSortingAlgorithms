@@ -1,0 +1,30 @@
+Sorting Algorithms
+
+**Note on Stable vs. Unstable sorting algorithms
+A sorting algorithm is said to be stable if two objects with equal keys appear
+in the same order in sorted output as they appear in the input array to be sorted.
+Some sorting algorithms are stable by nature like Insertion sort, Merge Sort, Bubble Sort, etc.
+And some sorting algorithms are not, like Heap Sort, Quick Sort, etc.
+
+***This difference can be a reason to choose a less optimal sorting algo***
+
+Background: a "stable" sorting algorithm keeps the items with the same sorting key in order.
+Suppose we have a list of 5-letter words:
+
+peach
+straw
+apple
+spork
+
+If we sort the list by just the first letter of each word then a stable-sort would produce:
+
+apple
+peach
+straw
+spork
+
+In an unstable sort algorithm, straw or spork may be interchanged,
+but in a stable one, they stay in the same relative positions
+(that is, since straw appears before spork in the input, it also appears before spork in the output).
+
+You can’t stack untable sorts and get the exact same results every time.
